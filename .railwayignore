@@ -1,0 +1,12 @@
+frontend/
+docs/
+ChatPDF.git/
+*.md
+.env
+.env.local
+.env.development
+node_modules/
+*.log
+.DS_Store
+.git/
+.gitignore
