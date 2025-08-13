@@ -175,10 +175,16 @@ export const getPDFs = async (req: AuthenticatedRequest, res: Response): Promise
       processedAt: pdf.processedAt,
     }));
 
-    res.json({ pdfs: pdfResponses });
+    res.json({ 
+      success: true,
+      data: { pdfs: pdfResponses }
+    });
   } catch (error) {
     console.error('Get PDFs error:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Internal server error' 
+    });
   }
 };
 
@@ -189,12 +195,18 @@ export const getPDF = async (req: AuthenticatedRequest, res: Response): Promise<
 
     const pdf = await db.findPDFById(id);
     if (!pdf) {
-      res.status(404).json({ error: 'PDF not found' });
+      res.status(404).json({ 
+        success: false,
+        error: 'PDF not found' 
+      });
       return;
     }
 
     if (pdf.userId !== userId) {
-      res.status(403).json({ error: 'Access denied' });
+      res.status(403).json({ 
+        success: false,
+        error: 'Access denied' 
+      });
       return;
     }
 
@@ -209,10 +221,16 @@ export const getPDF = async (req: AuthenticatedRequest, res: Response): Promise<
       processedAt: pdf.processedAt,
     };
 
-    res.json({ pdf: pdfResponse });
+    res.json({ 
+      success: true,
+      data: { pdf: pdfResponse }
+    });
   } catch (error) {
     console.error('Get PDF error:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ 
+      success: false,
+      error: 'Internal server error' 
+    });
   }
 };
 

@@ -87,8 +87,233 @@
         ],
         "updatedAt": "2025-08-11T19:35:21.221Z"
       }
+    ],
+    [
+      "fk0vag359",
+      {
+        "id": "fk0vag359",
+        "userId": "kxa1popuq",
+        "name": "pdf-1755018463823-578492159.pdf",
+        "originalName": "Job title_ Django Developer _ Remote.pdf",
+        "size": 95678,
+        "filePath": "uploads\\pdf-1755018463823-578492159.pdf",
+        "s3Key": "pdfs/kxa1popuq/1755018463826-585397827.pdf",
+        "s3Url": "https://chatpdf-storage-139.s3.eu-north-1.amazonaws.com/pdfs/kxa1popuq/1755018463826-585397827.pdf",
+        "pages": 2,
+        "status": "ready",
+        "uploadedAt": "2025-08-12T17:07:44.589Z",
+        "processedAt": "2025-08-12T17:07:45.302Z",
+        "chunks": [
+          "Job title: Django Developer | Remote \n \nSuccessful completion of this task will result in a $100 USD \nreward.  To claim this reward, you must satisfy all \nrequirements listed below. \n \n \n*Assignment: \n● Build an API that takes inputs of start and finish location \nboth within the USA \n● Return a map of the route along with optimal location to \nfuel up along the route -- optimal mostly means cost \neffective based on fuel prices \n● Assume the vehicle has a maximum range of 500 miles \nso multiple fuel ups might need to be displayed on the \nroute \n● Also return the total money spent on fuel assuming the \nvehicle achieves 10 miles per gallon \n● Use the attached file for a list of fuel prices  \n● Find a free API yourself for the map and routing \n \n \n \n \n \n\n \n \n*Requirements: \n● Build the app in Django 3. 2.",
+          "23 \n● Send your results for this project within 3 days of \nreceiving the exercise \n● The API should return results quickly, the quicker the \nbetter \n● The API shouldn't need to call the free map/routing API \nyou found too much One call to the map/route API is \nideal, two or three is acceptable \n● Make a loom where you use Postman or similar API \nplatform to demonstrate the API working while also giving \na quick overview of your code.  5 minutes max \n● Share the code with us \n \n \n \n \n ."
+        ],
+        "updatedAt": "2025-08-12T17:07:45.303Z"
+      }
+    ],
+    [
+      "s8uhwwcka",
+      {
+        "id": "s8uhwwcka",
+        "userId": "kxa1popuq",
+        "name": "pdf-1755019882829-128747289.pdf",
+        "originalName": "×××××××× 2024 ×××¢× ×  (1).pdf",
+        "size": 406267,
+        "filePath": "uploads\\pdf-1755019882829-128747289.pdf",
+        "s3Key": "pdfs/kxa1popuq/1755019882842-140799572.pdf",
+        "s3Url": "https://chatpdf-storage-139.s3.eu-north-1.amazonaws.com/pdfs/kxa1popuq/1755019882842-140799572.pdf",
+        "pages": 2,
+        "status": "ready",
+        "uploadedAt": "2025-08-12T17:31:23.914Z",
+        "processedAt": "2025-08-12T17:31:24.849Z",
+        "chunks": [
+          "המכללה האקדמית נתניה \nביה''ס למדעי המחשב  \n \nבחינה באוטומטים ושפות פורמליות \nמועד א '2024 \nמרצה:  נעה לוינשטיין \nמתרגל: נועם לוי \nמשך הבחינה: שעתיים.  \n \nאין להשתמש בחומר עזר ובמחשבון.  \n \nב ה צ ל ח ה .  \n \nיש לענות על 3 שאלות בלבד מתוך 4 השאלות (כל שאלה 33 נקודות) \n \n \n1.  בכל סעיף מוצגת טענה.   \n      עליכם להחליט האם הטענה נכונה או לא ,ולהוכיח את קביעתכם.  \n \n     א.   בכל אוטומט סופי דטרמיניסטי מספר המצבים גדול מאורך המילה הקצרה ביותר  \n           בשפה המתקבלת.  (בהנחה שהשפה המתקבלת לא ריקה)  \n       . באם L רגולרית אז  \n*\n2   *\n()\nLL\n\n.     \n      ג.  אם L לא רגולרית אז  \n*\nL\n לא רגולרית.     \n \n \n2 .      נגדיר שפה  L  מעל  האב' \n{  ,  ,  }abc\n    באופן הבא: \n      }        *}b,a{\n \nw \n, \n w  מכילה את baa    |   \nR\nwwc= { L     \n          \n          קיבעו האם L היא רגולרית, או לא רגולרית וחסרת הקשר,  \n          או לא חסרת הקשר.    \n         הוכיחו את קביעותיכם.  (קביעה ללא הוכחה לא תזוכה בנקודות).      \n \n\n \n3 .",
+          "תהי   Lשפת כל המילים מעל  האלפבית ={a,b}  \n     שבהן  bb מופיעה אך  bbb לא מופיעה \n \nא.  רישמו ביטוי רגולרי המתאר את L.  \nב.  בנו אוטומט סופי המקבל את L.  \n      ג .   כמה מחלקות שקילות יש לפי היחס \nL\n  .  הוכיחו.  \n \n \n \n \n4  . יהי \n{  ,  }\nab\n\n   ותהי\n*\n{  ,  }\nL\na b\n\n    נגדיר: \n \n,\n,\n}\n1    2    3\n1   1    2    2    3   3\n(  )  {\n. \nii\nn\nn    n\nDelete L\nL\n\n              \n    \n\n \n \n \nא.  תהי  \nL\n  היא שפת כל המילים המכילות את  aba  \nרישמו ביטוי רגולרי המתאר את\n()Delete L\n \n \n \nב.  הוכיחו או סיתרו: \n          אם L רגולרית אזי \n()Delete L\n רגולרית."
+        ],
+        "updatedAt": "2025-08-12T17:31:24.851Z"
+      }
+    ],
+    [
+      "9mpmaj6nz",
+      {
+        "id": "9mpmaj6nz",
+        "userId": "kxa1popuq",
+        "name": "pdf-1755020415093-504646610.pdf",
+        "originalName": "SEQAYA Summary.pdf",
+        "size": 4284029,
+        "filePath": "uploads\\pdf-1755020415093-504646610.pdf",
+        "s3Key": "pdfs/kxa1popuq/1755020415111-741958242.pdf",
+        "s3Url": "https://chatpdf-storage-139.s3.eu-north-1.amazonaws.com/pdfs/kxa1popuq/1755020415111-741958242.pdf",
+        "pages": 6,
+        "status": "ready",
+        "uploadedAt": "2025-08-12T17:40:16.672Z",
+        "processedAt": "2025-08-12T17:40:17.919Z",
+        "chunks": [
+          "SEQAYA Summary \nThe invention provides a smart soil irrigation device, SEQAYA, featuring ultra-low-energy operation \nwith expected battery longevity exceeding five years.  SEQAYA comprises an ESP microcontroller, \nsoil moisture sensor, latching solenoid valve, NFC communication unit, and a single multifunction \nbutton.  At first use, SEQAYA operates with default moisture threshold and sampling frequency \nvalues.  Users can later configure specific plant parameters via a smartphone app through NFC \ncommunication.  Short pressing the device's button activates 'Locate Mode,' helping match the \nphysical device to its digital representation in the app.  Long pressing the button activates 'Plant \nConfiguration Mode,' allowing reprogramming for a different plant.  Energy-efficient techniques such \nas deep sleep modes, controlled sampling, and solid-state circuit drivers maximize power savings.",
+          "Optionally, SEQAYA synchronizes soil and irrigation data to a cloud server for monitoring and future \noptimizations \n \nClaims: \n1.  An ultra-low-energy soil irrigation device comprising: \n- an ESP microcontroller; \n- a soil moisture sensor; \n- a latching electric valve; \n- a single multifunction physical button; \n- an NFC communication unit; \n- solid-state drivers for controlled activation of components; \n- a battery power supply; \n- wherein the device operates with preset default moisture thresholds and sampling rates until \nreconfigured.  \n2.  The device of claim 1, wherein a short press of the physical button activates a Locate Mode \nallowing NFC communication to identify the device within a smartphone app.  \n3.  The device of claim 1, wherein a long press of the physical button activates a Plant Configuration \nMode allowing reprogramming of plant-specific irrigation parameters via NFC.  \n4.",
+          "The device of claim 1, wherein the device enters a deep sleep or hibernation mode between \nscheduled operations to minimize power consumption \n5.  The device of claim 1, wherein solid-state driver circuits selectively power the soil moisture sensor \nand NFC communication module only during active periods.  \n\n6.  The device of claim 1, wherein a smartphone app provides an option for user-configurable soil \nmoisture sampling frequency, with advisory information regarding effects on battery longevity.  \n7.  The device of claim 1, optionally connecting to a cloud server to store moisture and irrigation data \nfor analysis and optimization.  \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nFIG.  1 \nFIG.",
+          "2 \nCover \nMultitasking \nButton \nSoil Moisture \nSensor \nEnclosure \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nLithium Polymer \nBattery \nLatching \nSolenoid Valve \nPCB Featuring ESP \nmicrocontroller \nand NFC Function \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nSmartphone \n(With Designated App) \nFaucet \nMain Water Hose \n(Constant water supply) \n\nBattery Info \n• Voltage: 37 V \n• Capacity: 1200 mAh = 1. 2 Ah \n• Energy capacity: \n3. 7 V×1. 2 Ah=4. 44 Wh=4,440mWh  \n \n    Daily Power Usage Estimate \n1.  Hibernation Mode \n• ESP32 in hibernation ~ 2 μA \n• Duration: 24 hours – active time ≈ 23. 988 hours/day \n• Daily consumption: \n2 μA×3. 7 V×23. 988 h=0. 177mWh  \n \n2.  ESP32 Wake Time \n• 2 wake-ups/day × 20 sec = 40 sec/day = 0. 0111 hr/day \n• Assume ESP32 draws 50 mA avg during active mode \n• Daily consumption: \n50 mA×3. 7 V×0. 0111 h=2. 05mWh  \n \n3.  Solenoid Valve \n• 2 activations/day × 50 ms = 0. 1 sec = 0.",
+          "000028 hr/day \n• Assume valve draws 300 mA during activation \n• Daily consumption: \n03 A×3. 7 V×0. 000028 h=0. 031mWh  \n \n4.  Capacitive Moisture Sensor \n• 20 mA × 3. 7 V × 10 sec/day = 20 mA × 3. 7 V × 0. 00278 hr \n• Daily consumption: \n0. 206mWh  \n \n      Total Daily Consumption \nTotal=0. 177+2. 05+0. 031+0. 206=2. 464mWh/day  \n\n \n       Battery Life Estimate \n4440 mWh / (2. 464 mWh/day) ≈ 1,802 days ≈ 4. 93 years  \n \n   Conclusion \nWith your given specs: \n• Estimated battery life: ~4. 9 years \n• We could realistically expect 4+ years."
+        ],
+        "updatedAt": "2025-08-12T17:40:17.922Z"
+      }
     ]
   ],
-  "conversations": [],
-  "messages": []
+  "conversations": [
+    [
+      "sra94enl5",
+      {
+        "id": "sra94enl5",
+        "userId": "kxa1popuq",
+        "pdfId": "rkcsw75ov",
+        "title": "Chat about SEQAYA Summary.pdf",
+        "createdAt": "2025-08-12T17:06:19.691Z",
+        "updatedAt": "2025-08-12T17:32:51.978Z"
+      }
+    ],
+    [
+      "ho90isfqm",
+      {
+        "id": "ho90isfqm",
+        "userId": "kxa1popuq",
+        "pdfId": "puhtwh6fa",
+        "title": "Chat about A_Low-Power_Microcontroller_with_Accuracy-Controll.pdf",
+        "createdAt": "2025-08-12T17:06:38.227Z",
+        "updatedAt": "2025-08-12T17:34:26.813Z"
+      }
+    ],
+    [
+      "mno0z3qel",
+      {
+        "id": "mno0z3qel",
+        "userId": "kxa1popuq",
+        "pdfId": "fk0vag359",
+        "title": "Chat about Job title_ Django Developer _ Remote.pdf",
+        "createdAt": "2025-08-12T17:11:25.698Z",
+        "updatedAt": "2025-08-12T17:11:30.534Z"
+      }
+    ],
+    [
+      "w85h8gt39",
+      {
+        "id": "w85h8gt39",
+        "userId": "kxa1popuq",
+        "pdfId": "s8uhwwcka",
+        "title": "Chat about ×××××××× 2024 ×××¢× ×  (1).pdf",
+        "createdAt": "2025-08-12T17:31:40.104Z",
+        "updatedAt": "2025-08-12T17:31:42.013Z"
+      }
+    ]
+  ],
+  "messages": [
+    [
+      "sra94enl5",
+      [
+        {
+          "id": "i8oer8lto",
+          "conversationId": "sra94enl5",
+          "content": "what is seqaya",
+          "role": "user",
+          "timestamp": "2025-08-12T17:06:19.691Z"
+        },
+        {
+          "id": "j2mkf4nug",
+          "conversationId": "sra94enl5",
+          "content": "SEQAYA is a smart soil irrigation device that is designed for ultra-low-energy operation, offering a battery life expectancy of over five years. This innovative device includes components like an ESP microcontroller, soil moisture sensor, latching solenoid valve, NFC communication unit, and a single multifunction button. Initially, SEQAYA operates with default moisture threshold and sampling frequency settings, but users can customize specific plant parameters through a smartphone app using NFC communication.\n\nThe device features energy-efficient technologies such as deep sleep modes, controlled sampling, and solid-state circuit drivers to maximize power savings. Additionally, SEQAYA can synchronize soil and irrigation data to a cloud server for monitoring and future optimizations. It also has different modes like 'Locate Mode' activated by a short press of the button to identify the device within the app and 'Plant Configuration Mode' activated by a long press for reprogramming plant-specific irrigation parameters.\n\nIn summary, SEQAYA is a cutting-edge soil irrigation device that combines smart technology with energy efficiency to provide long-lasting and customizable irrigation solutions for plants.",
+          "role": "assistant",
+          "timestamp": "2025-08-12T17:06:23.437Z",
+          "sources": []
+        },
+        {
+          "id": "aka7sj8cw",
+          "conversationId": "sra94enl5",
+          "content": "what is the relation between the name tasbih and seqaya find it",
+          "role": "user",
+          "timestamp": "2025-08-12T17:32:49.161Z"
+        },
+        {
+          "id": "8ws4m84b3",
+          "conversationId": "sra94enl5",
+          "content": "In the provided content, there is no direct mention of a relationship between the names \"Tasbih\" and \"SEQAYA.\" The document primarily focuses on detailing the features, functionality, and components of the SEQAYA smart soil irrigation device. Therefore, based on the information available, there doesn't seem to be a specific connection or relationship between the names \"Tasbih\" and \"SEQAYA\" within the context of the document provided. If you have any other questions or need further clarification, feel free to ask!",
+          "role": "assistant",
+          "timestamp": "2025-08-12T17:32:51.978Z",
+          "sources": []
+        }
+      ]
+    ],
+    [
+      "ho90isfqm",
+      [
+        {
+          "id": "ita1p4gvb",
+          "conversationId": "ho90isfqm",
+          "content": "whats thw pdf about",
+          "role": "user",
+          "timestamp": "2025-08-12T17:06:38.227Z"
+        },
+        {
+          "id": "w8nqe36jk",
+          "conversationId": "ho90isfqm",
+          "content": "The PDF document discusses a specially designed microcontroller with an event-driven sensor data processing unit (EPU) proposed to provide energy-efficient sensor data acquisition for Internet of Things (IoT) devices in rare-event human activity sensing applications. It focuses on rare-event sensing applications using remotely installed IoT sensor devices, which have long event-to-event distances. The document explains how the proposed signal-to-event converter (S2E) extracts atomic events with specific features of interest early in the processing of sensor signals. Additionally, it details the conventional sensor data processing methods and how the proposed event processing unit (EPU) can handle these tasks efficiently. \n\nMoreover, the document mentions the energy consumption, lifetime comparison, and operating current and accuracy of the time quantizer block in the context of sensor data processing for rare-event applications. It also includes information on the circuit-level simulator, the sensor processor design, and the measurement environment related to the implemented circuit and experimental results.\n\nIn summary, the PDF focuses on the design and implementation of energy-efficient sensor data processing for IoT devices in rare-event human activity sensing applications, emphasizing the extraction of atomic events and efficient event processing techniques.",
+          "role": "assistant",
+          "timestamp": "2025-08-12T17:06:42.014Z",
+          "sources": []
+        },
+        {
+          "id": "y3b4p3yqv",
+          "conversationId": "ho90isfqm",
+          "content": "whats the pdf about",
+          "role": "user",
+          "timestamp": "2025-08-12T17:34:23.921Z"
+        },
+        {
+          "id": "w47gajlvj",
+          "conversationId": "ho90isfqm",
+          "content": "The PDF document discusses the design and implementation of energy-efficient sensor data processing for Internet of Things (IoT) devices in rare-event human activity sensing applications. It introduces a specially designed microcontroller with an event-driven sensor data processing unit (EPU) that aims to optimize sensor data acquisition. The document emphasizes the extraction of atomic events using a signal-to-event converter (S2E) and the efficient processing of these events using the EPU. Additionally, it covers topics such as energy consumption, lifetime comparison, operating current, and accuracy of the time quantizer block in the context of sensor data processing for rare-event applications. The PDF provides detailed insights into circuit design, experimental results, and the architecture of the proposed sensor processor.",
+          "role": "assistant",
+          "timestamp": "2025-08-12T17:34:26.813Z",
+          "sources": []
+        }
+      ]
+    ],
+    [
+      "mno0z3qel",
+      [
+        {
+          "id": "s2592cvjn",
+          "conversationId": "mno0z3qel",
+          "content": "what is the job about",
+          "role": "user",
+          "timestamp": "2025-08-12T17:11:25.698Z"
+        },
+        {
+          "id": "fc5439k8b",
+          "conversationId": "mno0z3qel",
+          "content": "The job is for a Django Developer position that can be done remotely. The task for this job involves building an API that takes inputs of start and finish locations within the USA, then returning a map of the route along with the optimal locations to fuel up along the route. The goal is to find cost-effective fueling options based on fuel prices and the vehicle's maximum range of 500 miles. Additionally, the API should calculate and return the total money spent on fuel, assuming the vehicle achieves 10 miles per gallon.\n\nTo summarize, the job entails creating an API in Django 3.2 that efficiently handles mapping, routing, and fuel cost calculations for a given route within the USA. The successful completion of this task will result in a $100 USD reward, and there are specific requirements and guidelines that need to be followed, such as timely submission, efficient API performance, and sharing the code with the employer.",
+          "role": "assistant",
+          "timestamp": "2025-08-12T17:11:30.534Z",
+          "sources": []
+        }
+      ]
+    ],
+    [
+      "w85h8gt39",
+      [
+        {
+          "id": "84wo60gb3",
+          "conversationId": "w85h8gt39",
+          "content": "what is the pdf about",
+          "role": "user",
+          "timestamp": "2025-08-12T17:31:40.104Z"
+        },
+        {
+          "id": "wnaf714q1",
+          "conversationId": "w85h8gt39",
+          "content": "The PDF document provided contains a sample exam for a course on Automata and Formal Languages at the Netanya Academic College. The exam includes questions related to finite automata, regular languages, regular expressions, and automata theory. It presents statements that students need to evaluate for correctness and provide proofs for their decisions. Additionally, the exam includes tasks like defining languages, determining their regularity, constructing finite automata, and analyzing language properties such as equivalence classes. Overall, the PDF focuses on testing students' understanding of automata theory and formal languages through theoretical questions and problem-solving tasks.",
+          "role": "assistant",
+          "timestamp": "2025-08-12T17:31:42.013Z",
+          "sources": []
+        }
+      ]
+    ]
+  ]
 }
