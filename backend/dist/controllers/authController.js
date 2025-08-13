@@ -8,16 +8,25 @@ const register = async (req, res) => {
     try {
         const { email, name, password } = req.body;
         if (!email || !name || !password) {
-            res.status(400).json({ error: 'Email, name, and password are required' });
+            res.status(400).json({
+                success: false,
+                error: 'Email, name, and password are required'
+            });
             return;
         }
         if (password.length < 6) {
-            res.status(400).json({ error: 'Password must be at least 6 characters long' });
+            res.status(400).json({
+                success: false,
+                error: 'Password must be at least 6 characters long'
+            });
             return;
         }
         const existingUser = await database_1.db.findUserByEmail(email);
         if (existingUser) {
-            res.status(409).json({ error: 'User with this email already exists' });
+            res.status(409).json({
+                success: false,
+                error: 'User with this email already exists'
+            });
             return;
         }
         const hashedPassword = await (0, auth_1.hashPassword)(password);
@@ -29,14 +38,20 @@ const register = async (req, res) => {
         const token = (0, auth_1.generateToken)(user.id, user.email);
         const userResponse = (0, auth_1.sanitizeUser)(user);
         res.status(201).json({
-            message: 'User registered successfully',
-            user: userResponse,
-            token,
+            success: true,
+            data: {
+                message: 'User registered successfully',
+                user: userResponse,
+                token,
+            }
         });
     }
     catch (error) {
         console.error('Registration error:', error);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({
+            success: false,
+            error: 'Internal server error'
+        });
     }
 };
 exports.register = register;
@@ -44,30 +59,45 @@ const login = async (req, res) => {
     try {
         const { email, password } = req.body;
         if (!email || !password) {
-            res.status(400).json({ error: 'Email and password are required' });
+            res.status(400).json({
+                success: false,
+                error: 'Email and password are required'
+            });
             return;
         }
         const user = await database_1.db.findUserByEmail(email);
         if (!user) {
-            res.status(401).json({ error: 'Invalid email or password' });
+            res.status(401).json({
+                success: false,
+                error: 'Invalid email or password'
+            });
             return;
         }
         const isPasswordValid = await (0, auth_1.comparePassword)(password, user.password);
         if (!isPasswordValid) {
-            res.status(401).json({ error: 'Invalid email or password' });
+            res.status(401).json({
+                success: false,
+                error: 'Invalid email or password'
+            });
             return;
         }
         const token = (0, auth_1.generateToken)(user.id, user.email);
         const userResponse = (0, auth_1.sanitizeUser)(user);
         res.status(200).json({
-            message: 'Login successful',
-            user: userResponse,
-            token,
+            success: true,
+            data: {
+                message: 'Login successful',
+                user: userResponse,
+                token,
+            }
         });
     }
     catch (error) {
         console.error('Login error:', error);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({
+            success: false,
+            error: 'Internal server error'
+        });
     }
 };
 exports.login = login;
@@ -80,27 +110,42 @@ const googleAuth = async (req, res) => {
         }
         const result = await googleAuthService_1.GoogleAuthService.authenticateWithGoogle(idToken);
         res.json({
-            message: result.isNewUser ? 'User registered successfully with Google' : 'Login successful with Google',
-            user: result.user,
-            token: result.token,
-            isNewUser: result.isNewUser,
+            success: true,
+            data: {
+                message: result.isNewUser ? 'User registered successfully with Google' : 'Login successful with Google',
+                user: result.user,
+                token: result.token,
+                isNewUser: result.isNewUser,
+            }
         });
     }
     catch (error) {
         console.error('Google authentication error:', error);
         if (error instanceof Error) {
             if (error.message === 'Invalid Google token') {
-                res.status(401).json({ error: 'Invalid Google token' });
+                res.status(401).json({
+                    success: false,
+                    error: 'Invalid Google token'
+                });
             }
             else if (error.message === 'Email not verified with Google') {
-                res.status(400).json({ error: 'Email not verified with Google' });
+                res.status(400).json({
+                    success: false,
+                    error: 'Email not verified with Google'
+                });
             }
             else {
-                res.status(500).json({ error: 'Google authentication failed' });
+                res.status(500).json({
+                    success: false,
+                    error: 'Google authentication failed'
+                });
             }
         }
         else {
-            res.status(500).json({ error: 'Internal server error' });
+            res.status(500).json({
+                success: false,
+                error: 'Internal server error'
+            });
         }
     }
 };

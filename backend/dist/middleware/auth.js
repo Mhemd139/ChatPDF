@@ -14,8 +14,8 @@ const authenticateToken = (req, res, next) => {
     }
     if (token === 'mock-jwt-token-for-testing') {
         console.log('✅ Auth middleware - Mock token accepted');
-        req.userId = 'test-user-id';
-        req.userEmail = 'test@example.com';
+        req.userId = 'kxa1popuq';
+        req.userEmail = 'mhemd.masa@gmail.com';
         next();
         return;
     }

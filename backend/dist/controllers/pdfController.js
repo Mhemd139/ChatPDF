@@ -139,11 +139,17 @@ const getPDFs = async (req, res) => {
             uploadedAt: pdf.uploadedAt,
             processedAt: pdf.processedAt,
         }));
-        res.json({ pdfs: pdfResponses });
+        res.json({
+            success: true,
+            data: { pdfs: pdfResponses }
+        });
     }
     catch (error) {
         console.error('Get PDFs error:', error);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({
+            success: false,
+            error: 'Internal server error'
+        });
     }
 };
 exports.getPDFs = getPDFs;
@@ -153,11 +159,17 @@ const getPDF = async (req, res) => {
         const { id } = req.params;
         const pdf = await database_1.db.findPDFById(id);
         if (!pdf) {
-            res.status(404).json({ error: 'PDF not found' });
+            res.status(404).json({
+                success: false,
+                error: 'PDF not found'
+            });
             return;
         }
         if (pdf.userId !== userId) {
-            res.status(403).json({ error: 'Access denied' });
+            res.status(403).json({
+                success: false,
+                error: 'Access denied'
+            });
             return;
         }
         const pdfResponse = {
@@ -170,11 +182,17 @@ const getPDF = async (req, res) => {
             uploadedAt: pdf.uploadedAt,
             processedAt: pdf.processedAt,
         };
-        res.json({ pdf: pdfResponse });
+        res.json({
+            success: true,
+            data: { pdf: pdfResponse }
+        });
     }
     catch (error) {
         console.error('Get PDF error:', error);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({
+            success: false,
+            error: 'Internal server error'
+        });
     }
 };
 exports.getPDF = getPDF;
@@ -182,15 +200,25 @@ const deletePDF = async (req, res) => {
     try {
         const userId = req.userId;
         const { id } = req.params;
+        console.log(`🗑️ Delete PDF request: User ${userId} wants to delete PDF ${id}`);
         const pdf = await database_1.db.findPDFById(id);
         if (!pdf) {
-            res.status(404).json({ error: 'PDF not found' });
+            console.log(`❌ Delete PDF: PDF ${id} not found`);
+            res.status(404).json({
+                success: false,
+                error: 'PDF not found'
+            });
             return;
         }
         if (pdf.userId !== userId) {
-            res.status(403).json({ error: 'Access denied' });
+            console.log(`❌ Delete PDF: Access denied for user ${userId} to PDF ${id} (owner: ${pdf.userId})`);
+            res.status(403).json({
+                success: false,
+                error: 'Access denied'
+            });
             return;
         }
+        console.log(`✅ Delete PDF: User ${userId} authorized to delete PDF ${id}`);
         if (pdf.s3Key) {
             try {
                 await s3Service_1.s3Service.deleteFile(pdf.s3Key);
@@ -209,6 +237,16 @@ const deletePDF = async (req, res) => {
                 console.error('Error deleting local file:', localError);
             }
         }
+        const deleted = await database_1.db.removePDF(id);
+        if (!deleted) {
+            console.error(`❌ Delete PDF: Failed to remove PDF ${id} from database`);
+            res.status(500).json({
+                success: false,
+                error: 'Failed to delete PDF from database'
+            });
+            return;
+        }
+        console.log(`✅ Delete PDF: Successfully deleted PDF ${id} from database`);
         res.json({
             success: true,
             message: 'PDF deleted successfully'

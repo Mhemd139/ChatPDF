@@ -9,6 +9,7 @@ export interface SendMessageRequest {
     conversationHistory?: ChatMessage[];
 }
 export declare const sendMessage: (req: AuthenticatedRequest, res: Response) => Promise<void>;
+export declare const getConversationHistory: (req: AuthenticatedRequest, res: Response) => Promise<void>;
 export declare const testAIConnection: (req: AuthenticatedRequest, res: Response) => Promise<void>;
 export {};
 //# sourceMappingURL=chatController.d.ts.map

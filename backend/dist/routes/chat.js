@@ -6,6 +6,7 @@ const auth_1 = require("../middleware/auth");
 const router = (0, express_1.Router)();
 router.use(auth_1.authenticateToken);
 router.post('/send', chatController_1.sendMessage);
+router.get('/conversation/:pdfId', chatController_1.getConversationHistory);
 router.get('/test-connection', chatController_1.testAIConnection);
 exports.default = router;
 //# sourceMappingURL=chat.js.map
