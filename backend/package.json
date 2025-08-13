@@ -4,8 +4,8 @@
   "description": "Backend API for ChatPDF - AI-powered PDF conversations",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "node ./node_modules/.bin/tsc",
+    "start": "npx ts-node src/index.ts",
+    "build": "echo \"no build needed\"",
     "dev": "nodemon src/index.ts",
     "setup-s3": "node scripts/setup-s3.js",
     "reprocess-pdf": "node scripts/reprocess-pdf.js",
