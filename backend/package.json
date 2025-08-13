@@ -4,7 +4,8 @@
   "description": "Backend API for ChatPDF - AI-powered PDF conversations",
   "main": "dist/index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node dist/server.js",
+    "build": "tsc",
     "dev": "nodemon src/index.ts",
     "setup-s3": "node scripts/setup-s3.js",
     "reprocess-pdf": "node scripts/reprocess-pdf.js",
@@ -19,10 +20,13 @@
   ],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
-    "@pinecone-database/pinecone": "^1.1.2",
     "@aws-sdk/client-s3": "^3.0.0",
     "@aws-sdk/s3-request-presigner": "^3.0.0",
+    "@pinecone-database/pinecone": "^1.1.2",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -46,6 +50,6 @@
     "@types/node": "^20.8.10",
     "@types/pdf-parse": "^1.1.4",
     "nodemon": "^3.0.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.9.2"
   }
 }
